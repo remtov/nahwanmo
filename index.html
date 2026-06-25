@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나비네 환경보호 모임</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 3rem 0;
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-content {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .activity-card {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .activity-card h3 {
+            color: #764ba2;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .activity-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            border-bottom-color: white;
+            color: white;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: white;
+            color: #667eea;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .mission {
+            background: linear-gradient(to right, #667eea15, #764ba215);
+            padding: 2rem;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .activities {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🦋 나비네 환경보호 모임</h1>
+        <p>함께 만드는 깨끗한 환경</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#activities">활동</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 소개 섹션 -->
+        <section id="about">
+            <h2>🌿 우리에 대해</h2>
+            <div class="about-content">
+                <p>나비네 환경보호 모임은 지역 주민분들과 함께 우리 지역의 환경을 보호하고 보전하기 위해 활동하는 모임입니다.</p>
+                <p>산, 바다, 강, 계곡 등 자연이 풍부한 지역의 쓰레기를 줍고 정화하는 활동을 통해 깨끗하고 아름다운 환경을 만들어가고 있습니다.</p>
+            </div>
+
+            <div class="mission">
+                <h3>📌 우리의 목표</h3>
+                <p>지속 가능한 환경을 만들기 위해 함께 행동하고, 모두가 행복한 녹색 지구를 만드는 것입니다.</p>
+            </div>
+        </section>
+
+        <!-- 활동 섹션 -->
+        <section id="activities">
+            <h2>🌍 주요 활동</h2>
+            <div class="activities">
+                <div class="activity-card">
+                    <div class="activity-icon">🏔️</div>
+                    <h3>산 정화</h3>
+                    <p>등산로와 산림 지역의 쓰레기를 수거하고 자연 생태계를 보호합니다.</p>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🌊</div>
+                    <h3>해변 정화</h3>
+                    <p>해변과 해안 지역의 플라스틱 쓰레기를 제거하고 해양 생물을 보호합니다.</p>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🌳</div>
+                    <h3>강/계곡 정화</h3>
+                    <p>강물과 계곡의 수질 보전을 위해 정기적인 정화 활동을 전개합니다.</p>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">♻️</div>
+                    <h3>환경 캠페인</h3>
+                    <p>지역주민들과 함께 환경 보호의 중요성을 알리는 캠페인을 진행합니다.</p>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">🤝</div>
+                    <h3>커뮤니티 활동</h3>
+                    <p>다양한 환경 단체와 협력하여 함께 환경 보호를 실천합니다.</p>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-icon">📚</div>
+                    <h3>환경 교육</h3>
+                    <p>어린이와 주민들을 위한 환경 교육 프로그램을 운영합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact">
+            <div class="contact-section">
+                <h2>📞 함께하기</h2>
+                <p>나비네 환경보호 모임에 관심이 있으신가요?</p>
+                <p>아래 링크를 통해 우리와 연결되어 함께 환경을 보호해보세요!</p>
+                <a href="https://open.kakao.com/o/p8NS3aBi" class="contact-button">카카오톡 오픈채팅 참여하기</a>
+                <p style="margin-top: 2rem; font-size: 0.9rem;">© 2026 나비네 환경보호 모임 | 함께 만드는 깨끗한 지구</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 나비네 환경보호 모임 | 환경을 생각하는 우리들</p>
+    </footer>
+</body>
+</html>
